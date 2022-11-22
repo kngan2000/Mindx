@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!--Q1-->
+    <script>
+        for(i=1; i<=10; i++){
+          if(i%2==0){
+            console.log(i)
+          }
+        }
+    </script>
+        
+    <!--Q2-->
+    <script>
+        let inputValue= 5;
+        let isprime=inputValue==1? false:true;
+
+        for(let i=2;i<inputValue;i++){
+        inputValue%i==0? isprime*=false :isprime*=true;
+    };
+
+    </script>
+    <!--Q3-->
+    <script>
+        var array = [2,1,7,2,6,9,1,99,12,56] ;
+
+        for (var i = 1; i < array.length; i++)
+            for (var j = 0; j < i; j++)
+                if (array[i] < array[j]) {
+                    var x = array[i];
+                    array[i] = array[j];
+                    array[j] = x;
+        }
+
+        console.log(array);
+    </script>
+    <!--Q4-->
+    <script>
+        var array = [2,1,7,2,6,9,1,99,12,56] ;
+        
+
+    </script>
+    <!--Q5-->
+    <script>
+
+    </script>
+</body>
+</html>
