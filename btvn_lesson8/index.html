@@ -19,12 +19,20 @@
         
     <!--Q2-->
     <script>
-        let inputValue= 5;
-        let isprime=inputValue==1? false:true;
-
-        for(let i=2;i<inputValue;i++){
-        inputValue%i==0? isprime*=false :isprime*=true;
-    };
+        const checkPrime = (n) =>{
+            var i =2;
+            if(n<2){
+                return false;
+            }
+            while(i<n){
+                if(n%i===0){
+                    return false;
+                }
+                i++;
+            }
+            return true;
+        }
+        console.log(checkPrime(5))
 
     </script>
     <!--Q3-->
@@ -49,7 +57,37 @@
     </script>
     <!--Q5-->
     <script>
-
+        const formatPath=(path)=>{
+            noewPath="";
+            var i=0;
+            for(i=0; i<path.length-1;i++){
+                if((noewPath==="" && path[i]==="/") || (path[i]===path[i+1])&& (path[i]==="/")){
+                    continue
+                }
+                noewPath = noewPath + path[i]
+            }
+            return noewPath;
+        }
+        console.log(formatPath("////laptrinh//////code//////javascript/////"))
     </script>
+    <!---->
+    <script>
+        var language=[
+            'JavaScript',
+            7,
+            4,
+            1]
+            //toString
+            console.log(language.toString())
+            //join
+            console.log(language.join(''))
+            //pop
+            console.log(language.pop())
+            console.log(language)
+            //push
+            console.log(language.push('C#'));
+            console.log(language)
+        </script>
+
 </body>
 </html>
