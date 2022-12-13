@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" method="get">
+        <label for="num">Number a</label><br>
+        <input id="number" name="number" type="text" value=""><br>
+    
+        <label>Number b</label><br>
+        <input name="number" type="number" value=""><br>
+    
+        <input type="submit" name="submit" value="SUM" />
+    </form>
+
+    <script type="text/javascript">
+        var numb = numberOneTriangle('Input: ')
+        numb = parseInt(numb)
+        for(i=0;i<numb;i++) {
+            for(j=0;j<=i;j++) {
+                document.writeln(" * ")
+            }
+            document.writeln("<br/>")
+        }
+    </script>
+
+</body>
+</html>
